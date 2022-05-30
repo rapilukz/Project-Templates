@@ -1,8 +1,8 @@
 {
-  "name": "csgo-bind-generator",
+  "name": "app-name",
   "private": false,
-  "author": "rapilukz",
-  "description": "A CS:GO Bind Generator",
+  "author": "author-name",
+  "description": "description",
   "version": "1.0.0",
   "main": "electron/main.js",
   "scripts": {
@@ -10,13 +10,12 @@
     "build": "vite build",
     "electron": "wait-on tcp:3000 && cross-env IS_DEV=true electron .",
     "electron:dev": "concurrently -k \"cross-env BROWSER=none ELECTRON=true npm run dev\" \"npm run electron \"",
-    "package": "cross-env ELECTRON=true vite build && electron-packager ./ Themebuilder --platform=win32 --arch=x64 --overwrite --asar --prune",
+    "package": "cross-env ELECTRON=true vite build && electron-packager ./ app-name --platform=win32 --arch=x64 --overwrite --asar --prune",
     "build:for:electron": "cross-env ELECTRON=true vite build",
     "electron:prod": "npm build:for:electron && electron ."
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "lodash-es": "^4.17.21",
     "pinia": "^2.0.14",
     "vue": "^3.2.25"
   },
@@ -35,8 +34,8 @@
     "wait-on": "^6.0.1"
   },
   "build": {
-    "appId": "csgo-bind-generator",
-    "productName": "CS:GO Bind Generator",
+    "appId": "app-name",
+    "productName": "app-name",
     "copyright": "Copyright © 2019 ${author}",
     "target": "NSIS",
     "nsis": {
