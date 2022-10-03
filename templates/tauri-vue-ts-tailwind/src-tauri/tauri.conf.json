@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "tauri-discord",
+    "productName": "tauri-app",
     "version": "0.0.0"
   },
   "tauri": {
@@ -57,7 +57,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Fake Discord",
+        "title": "Tauri app",
         "center": false,
         "maximized": true,
         "minWidth": 950,
