@@ -21,6 +21,7 @@
     "declaration": true,
     "resolveJsonModule": true,
     "strict": true,
+    "noImplicitAny": true
   },
   "include": [
     "src"
