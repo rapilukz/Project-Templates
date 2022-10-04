@@ -35,12 +35,11 @@ class ExtendedClient extends Client {
       }
     });
 
-
-    const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
+    const rest = new REST({ version: '10' }).setToken(process.env.TOKEN as string);
     try {
       console.log('Started refreshing application (/) commands.');
 
-      await rest.put(Routes.applicationGuildCommands(process.env.BOT_ID, GuildID), { body: this.SlashCommandsArray });
+      await rest.put(Routes.applicationGuildCommands(process.env.BOT_ID as string, GuildID), { body: this.SlashCommandsArray });
 
       console.log('Successfully reloaded application (/) commands.');
     } catch (err) {
@@ -65,8 +64,6 @@ class ExtendedClient extends Client {
   public async init() {
     this.login(process.env.TOKEN); // Login to Discord
     this.InitHandlers(); // Initialize Command and Event handlers
-
-   /*  console.log(table.toString()); */
 
   }
 }
