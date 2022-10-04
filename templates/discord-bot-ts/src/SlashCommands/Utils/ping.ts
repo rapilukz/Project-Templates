@@ -1,13 +1,14 @@
 import { SlashCommand } from '../../Interfaces';
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction } from 'discord.js';
+import { CommandInteraction, PermissionFlagsBits } from 'discord.js';
 
 export const command: SlashCommand = {
     category: 'Util',
+    description: 'Test Command',
     data: new SlashCommandBuilder()
     .setName('ping')
     .setDescription('Ping the bot')
-    .setDefaultPermission(true),
+    .setDefaultMemberPermissions(PermissionFlagsBits.SendMessages),
     run: async (interaction: CommandInteraction) => {
         interaction.reply('Pong!');
     }
