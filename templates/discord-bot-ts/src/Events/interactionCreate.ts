@@ -8,15 +8,7 @@ export const event: Event = {
       if (!interaction.guild) return interaction.reply('This command can only be used in a server');
       const command = client.SlashCommands.get(interaction.commandName);
       if (!command) return;
-
-      // Basic Permissions Check
-      if (!interaction.memberPermissions.has(command.userPermissions)) {
-        return interaction.reply({
-          content: `You don't have the required permissions to use this command!`,
-          ephemeral: true,
-        });
-      }
-
+      
       try {
         await command.run(interaction);
       } catch (error) {
