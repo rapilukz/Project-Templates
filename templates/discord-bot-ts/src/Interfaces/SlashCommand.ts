@@ -7,7 +7,6 @@ export interface Run {
 
 export interface SlashCommand {
   category: string;
-  userPermissions?: PermissionResolvable[];
   data: Omit<SlashCommandBuilder, 'addSubcommand' | 'addSubcommandGroup'>;
   developer?: boolean;
   description: string;
