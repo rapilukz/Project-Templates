@@ -1,0 +1,28 @@
+{
+  "name": "layout-editor",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/layout-editor.umd.cjs",
+  "module": "./dist/layout-editor.js",
+  "exports": {
+    ".": {
+      "import": "./dist/layout-editor.js",
+      "require": "./dist/layout-editor.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.0"
+  }
+}

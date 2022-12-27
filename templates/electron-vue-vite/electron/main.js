@@ -24,7 +24,7 @@ function createWindow() {
 
   mainWindow.loadURL(
     isDev
-      ? "http://localhost:3000"
+      ? "http://localhost:5173"
       : `file://${join(__dirname, "../dist/index.html")}`
   );
 

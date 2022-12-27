@@ -1,13 +1,10 @@
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-import App from './App.vue';
+import { createApp } from 'vue'
+import './style.css'
+import App from './App.vue'
+import LayoutEditor from 'layout-editor'
+import 'layout-editor/dist/style.css'
 
-/* css Files */
-import './styles/styles.scss';
+const app = createApp(App)
 
-const app = createApp(App);
-const pinia = createPinia();
-
-app.use(pinia);
-
-createApp(App).mount('#app');
+app.use(LayoutEditor)
+app.mount('#app')
