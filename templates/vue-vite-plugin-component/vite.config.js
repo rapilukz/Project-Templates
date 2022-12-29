@@ -12,7 +12,7 @@ export default defineConfig({
       fileName: "layout-editor",
     },
     rollupOptions:{
-      external: ["Vue"],
+      external: ["vue"],
       output:{
         globals: {
           vue: "vue"
