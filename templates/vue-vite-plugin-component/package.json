@@ -1,14 +1,14 @@
 {
-  "name": "layout-editor",
+  "name": "app-name",
   "type": "module",
   "private": true,
   "version": "1.0.0",
-  "main": "./dist/layout-editor.umd.cjs",
-  "module": "./dist/layout-editor.js",
+  "main": "./dist/app-name.umd.cjs",
+  "module": "./dist/app-name.js",
   "exports": {
     ".": {
-      "import": "./dist/layout-editor.js",
-      "require": "./dist/layout-editor.umd.cjs"
+      "import": "./dist/app-name.js",
+      "require": "./dist/app-name.umd.cjs"
     },
     "./dist/style.css": "./dist/style.css"
   },

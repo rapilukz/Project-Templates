@@ -8,8 +8,8 @@ export default defineConfig({
   build:{
     lib:{
       entry: resolve(__dirname, "./src/index.js"),
-      name: "LayoutEditor",
-      fileName: "layout-editor",
+      name: "appName",
+      fileName: "app-name",
     },
     rollupOptions:{
       external: ["vue"],

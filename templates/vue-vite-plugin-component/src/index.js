@@ -1,7 +1,7 @@
-import LayoutEditor from './components/LayoutEditor.vue'
+import AppComponent from './components/AppComponent.vue'
 
 export default {
     install: (app, options) => {
-        app.component("LayoutEditor", LayoutEditor)
+        app.component("AppComponent", AppComponent)
     },
 };

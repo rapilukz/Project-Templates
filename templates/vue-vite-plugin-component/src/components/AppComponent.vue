@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: 'LayoutEditor',
+    name: 'App Name',
 
     mounted(){
         console.log('a')
