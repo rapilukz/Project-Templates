@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  web-app-dev:
+    build:
+      context: ../app
+      dockerfile: ../app/Dockerfile.dev
+    volumes:
+    - ../app:/app
+    - /app/node_modules
+    ports:
+      - "3000:3000"
+      
